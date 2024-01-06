@@ -1,9 +1,11 @@
 import { cn } from "../utils";
 import { Div } from "./base";
+import { Navigation } from "./nav_bar";
 
 const Layout = ({children, className, ...rest}) => {
   return (
-    <Div className={cn("max-w-[1280px] mx-auto", className)} {...rest}>
+    <Div className={cn("max-w-[1280px] mx-auto flex flex-col gap-10", className)} {...rest}>
+      <Navigation/>
       {children}
     </Div>
   )
