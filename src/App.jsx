@@ -1,8 +1,7 @@
 import './App.css'
 import { Card, Layout } from './components'
 import CardGrid from './components/CardGrid'
-import { HeroPage } from './pages'
-import {Footer} from './pages'
+import { HeroPage, Footer, Signup } from './pages'
 
 function App() {
 
@@ -15,6 +14,7 @@ function App() {
         <Card />
         <Card />
       </CardGrid>
+      <Signup />
       <Footer/>
     </Layout>
     </>
