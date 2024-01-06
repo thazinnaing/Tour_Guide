@@ -1,10 +1,11 @@
 import './App.css'
+import { cn } from './utils'
 
 function App() {
 
   return (
     <>
-     <h1 className='text-green-700'>Hello</h1>
+     <h1 className={cn('text-black')}>Hello</h1>
     </>
   )
 }
