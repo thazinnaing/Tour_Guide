@@ -1,17 +1,19 @@
 import './App.css'
-import { Card } from './components'
+import { Card, Layout } from './components'
 import CardGrid from './components/CardGrid'
 
 function App() {
 
   return (
     <>
-    <CardGrid>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </CardGrid>
+    <Layout>
+      <CardGrid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardGrid>
+    </Layout>
     </>
   )
 }
