@@ -1,11 +1,17 @@
 import './App.css'
-import { cn } from './utils'
+import { Card } from './components'
+import CardGrid from './components/CardGrid'
 
 function App() {
 
   return (
     <>
-     <h1 className={cn('text-black')}>Hello</h1>
+    <CardGrid>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </CardGrid>
     </>
   )
 }
