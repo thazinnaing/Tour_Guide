@@ -2,6 +2,7 @@ import './App.css'
 import { Card, Layout } from './components'
 import CardGrid from './components/CardGrid'
 import { HeroPage } from './pages'
+import {Footer} from './pages'
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
         <Card />
         <Card />
         <Card />
-        <Card />
       </CardGrid>
+      <Footer/>
     </Layout>
     </>
   )

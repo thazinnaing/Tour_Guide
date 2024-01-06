@@ -10,7 +10,7 @@ const HeroPage = () => {
           <H1>Explore </H1> <H1> Beautiful </H1> <H1> World! </H1>
         </Div>
         <Div className={cn('flex justify-between shadow-md rounded-md overflow-hidden')}>
-          <Filter type="Country" data="bangladesh" />
+          <Filter type="Located in" data="bangladesh" />
           <Filter type="Date" data="Wed_7 Nov" />
           <Filter type="Price Range" data="$400-$700" />
           <Div className={cn('bg-primary h-full text-white flex items-center justify-center w-1/4')}><H3>Search</H3></Div>
