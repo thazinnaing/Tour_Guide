@@ -5,9 +5,9 @@ export const H1 = ({ children, className, ...rest }) => {
 };
 
 export const H2 = ({ children, ...rest }) => {
-  return <h2 {...rest}>{children}</h2>;
+  return <h2  {...rest}>{children}</h2>;
 };
 
-export const H3 = ({ children, ...rest }) => {
-  return <h3  {...rest}>{children}</h3>;
+export const H3 = ({ children, className, ...rest }) => {
+  return <h3 className={cn('font-semibold text-md', className)}  {...rest}>{children}</h3>;
 };
