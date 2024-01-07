@@ -1,7 +1,20 @@
 import './App.css'
-import { Card, Layout } from './components'
-import CardGrid from './components/CardGrid'
-import { HeroPage, Footer, Signup, MiniSquareCard, ImageGallery, LogoTitle, TourService } from './pages'
+import { Layout, PlaceContainer } from './components'
+import { Footer, HeroPage, ImageGallery, LogoTitle, MiniSquareCard, Signup, TourService } from './pages'
+
+const places = [
+  {id: 1, title: "something", description: "some description"},
+  {id: 2, title: "something", description: "some description"},
+  {id: 3, title: "something", description: "some description"},
+  {id: 4, title: "something", description: "some description"}
+]
+
+const tabs = [
+  {id: 1, title: "something"},
+  {id: 2, title: "something"},
+  {id: 3, title: "something"},
+  {id: 4, title: "something"}
+]
 
 function App() {
 
@@ -9,11 +22,7 @@ function App() {
     <>
     <Layout>
       <HeroPage />
-      <CardGrid>
-        <Card />
-        <Card />
-        <Card />
-      </CardGrid>
+      <PlaceContainer places={places} tabs={tabs} label="Popular Places"/>
       <TourService />
       <MiniSquareCard />
       <ImageGallery />
