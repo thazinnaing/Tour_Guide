@@ -1,9 +1,19 @@
+import { useCallback } from "react";
 import { Div, H3 } from "./base";
 
-const Tab = ({title, ...rest}) => {
+const Tab = ({data, onClick, ...rest}) => {
+
+  const onClickX = useCallback(() => {
+    onClick(data.id)
+  },[data, onClick])
+
+  if (!data) {
+    return
+  }
+
   return (
-    <Div {...rest}>
-      <H3>{title}</H3>  
+    <Div onClick={onClickX} {...rest}>
+      <H3>{data.title}</H3>  
     </Div>
   )
 }
