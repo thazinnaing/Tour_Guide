@@ -1,5 +1,4 @@
 import { Globe, Hotel, Utensils, Wifi } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
 import ServiceLogo from "../components/ServiceLogo"
 import { Div, H2, P } from "../components/base"
 import { cn } from "../utils"
@@ -14,38 +13,12 @@ const logoData=[
   {icon: Utensils, title: "Food"}
   ]
 ]
-const TourService = () => {
-  const ref = useRef(null)
-  const [state, setState] = useState(false)
-
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.map(entry => {
-        setState(entry.isIntersecting)
-      })
-    }, {threshold: 1})
-
-    observer.observe(ref.current)
-
-    return () => observer.disconnect();
-  },[])
-
-  useEffect(() => {
-    if(state) {
-      ref.current.classList.add('animate')
-    }else {
-      ref.current.classList.remove('animate')
-    }
-  },[state])
-
+const TourService = () => {  
   return (
     <Div className={cn('flex gap-10')}>
-      <div ref={ref} className={cn('w-1/2 bg-gray-700')} >
-        <Div>
- aa
-        </Div>
-      </div>
+      <Div className={cn('w-1/2 bg-gray-700')}>
+          aa
+      </Div>
       <Div className={cn('flex flex-col w-1/2 gap-4')}>
         <Div>
           <H2>Explore all corners of</H2>
