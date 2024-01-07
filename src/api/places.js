@@ -42,15 +42,15 @@ const places = [
       },
     ],
   },
-  {
-    id: 3,
-    places: [
-      { id: 12, title: "something four", description: "some description four" },
-      { id: 13, title: "something four", description: "some description four" },
-      { id: 14, title: "something four", description: "some description four" },
-      { id: 15, title: "something four", description: "some description four" },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   places: [
+  //     { id: 12, title: "something four", description: "some description four" },
+  //     { id: 13, title: "something four", description: "some description four" },
+  //     { id: 14, title: "something four", description: "some description four" },
+  //     { id: 15, title: "something four", description: "some description four" },
+  //   ],
+  // },
 ];
 
 export const usePlaces = (id) => {

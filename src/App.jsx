@@ -6,7 +6,7 @@ const tabs = [
   {id: 0, title: "something"},
   {id: 1, title: "something"},
   {id: 2, title: "something"},
-  {id: 5, title: "something"},
+  {id: 3, title: "something"},
   {id: 'view_all', title: "view all"}
 ]
 

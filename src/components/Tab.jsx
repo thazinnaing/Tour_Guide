@@ -13,7 +13,7 @@ const Tab = ({data, onClick, ...rest}) => {
 
   return (
     <Div onClick={onClickX} {...rest}>
-      <H3>{data.title}</H3>  
+      <H3 className="cursor-pointer">{data.title}</H3>  
     </Div>
   )
 }
