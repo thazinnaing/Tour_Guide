@@ -1,6 +1,7 @@
 import { cn } from "../utils";
 import CardGrid from "./CardGrid";
 import { Div, H2 } from "./base";
+import { Tab } from "./nav_bar";
 
 const PlaceContainer  = ({places, tabs, label, }) => {
   return (
@@ -9,7 +10,7 @@ const PlaceContainer  = ({places, tabs, label, }) => {
       <Div className={cn('flex justify-end')}>
         <Div className={cn('flex justify-between my-2 md:w-1/2')}>
           {tabs.map(tab => (
-            <p key={tab.id}>{tab.title}</p>
+            <Tab title={tab.title} key={tab.id}/>
           ))}
         </Div>
       </Div>
@@ -17,5 +18,7 @@ const PlaceContainer  = ({places, tabs, label, }) => {
     </Div>
   )
 }
+
+
 
 export default PlaceContainer;

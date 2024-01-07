@@ -1,6 +1,6 @@
 import { cn } from "../../utils";
+import Tab from "../Tab";
 import { Button, Div } from "../base";
-import Tab from "./Tab";
 
 const Navigation = ({className, ...rest}) => {
   return (

@@ -5,5 +5,6 @@ import FooterQLinks from "./FooterQLinks";
 import FooterContact from "./FooterContact";
 import ServiceLogo from "./ServiceLogo";
 import PlaceContainer from "./PlaceContainer";
+import Tab from "./Tab";
 
-export { Card, Layout, Filter, FooterContact, FooterQLinks, ServiceLogo, PlaceContainer };
+export { Card, Layout, Filter, FooterContact, FooterQLinks, ServiceLogo, Tab, PlaceContainer };
