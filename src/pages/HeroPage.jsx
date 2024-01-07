@@ -15,7 +15,7 @@ const HeroPage = () => {
             <Divider />
           </Div>
           <Filter type="Date" data="Wed_7 Nov" />
-          <Div className={cn('py-4')}>
+          <Div className={cn('py-')}>
             <Divider />
           </Div>
           <Filter type="Price Range" data="$400-$700" />
