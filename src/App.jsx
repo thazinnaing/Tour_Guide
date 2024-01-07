@@ -1,7 +1,7 @@
 import './App.css'
 import { Card, Layout } from './components'
 import CardGrid from './components/CardGrid'
-import { HeroPage, Footer, Signup, MiniSquareCard, ImageGallery, LogoTitle } from './pages'
+import { HeroPage, Footer, Signup, MiniSquareCard, ImageGallery, LogoTitle, TourService } from './pages'
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
         <Card />
         <Card />
       </CardGrid>
+      <TourService />
       <MiniSquareCard />
       <ImageGallery />
       <LogoTitle />
