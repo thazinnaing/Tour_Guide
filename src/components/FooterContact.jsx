@@ -6,7 +6,7 @@ const FooterContact = ({contacts}) => {
     const content = contacts.map((contact, index)=>{
       return(
         <Div key={index} className={cn('flex gap-3')}>
-          <contact.icon />
+          <contact.icon className={cn('text-secondary')}/>
           <P>{contact.data}</P>
         </Div>
       )
