@@ -25,3 +25,10 @@ export const logoData=[
   {icon: Utensils, title: "Food"}
   ]
 ]
+
+export const squareCardData = [
+  {amount: "24+", title: "Cities"},
+  {amount: "700+", title: "Places"},
+  {amount: "200+", title: "Hotel"},
+  {amount: "2k+", title: "Review"}
+]
