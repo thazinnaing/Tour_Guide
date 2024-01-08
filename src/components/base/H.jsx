@@ -5,7 +5,7 @@ export const H1 = ({ children, className, ...rest }) => {
 };
 
 export const H2 = ({ children, className, ...rest }) => {
-  return <h2 className={cn('text-3xl', className)} {...rest}>{children}</h2>;
+  return <h2 className={cn('text-2xl md:text-3xl font-semibold', className)} {...rest}>{children}</h2>;
 };
 
 export const H3 = ({ children, className, ...rest }) => {
