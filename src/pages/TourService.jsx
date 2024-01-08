@@ -7,10 +7,10 @@ import { logoData } from "../components/Data"
 const TourService = () => {  
   return (
     <Div className={cn('w-full grid grid-cols-1 sm:grid-cols-2 gap-10')}>
-      <Div className={cn('w-[100%] h-72 sm:h-auto bg-gray-700')}>
+      <Div className={cn('h-72 sm:h-auto bg-gray-700')}>
           
       </Div>
-      <Div className={cn('flex flex-col w-[100%] gap-4')}>
+      <Div className={cn('flex flex-col gap-4')}>
         <Div>
           <H2>Explore all corners of</H2>
           <H2>The world with us</H2>
