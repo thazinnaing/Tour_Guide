@@ -1,13 +1,13 @@
 import { useCallback, useState } from "react";
-import { usePlaces } from "../api/places";
 import { cn } from "../utils";
 import CardGrid from "./CardGrid";
 import Tab from "./Tab";
 import { Div, H2 } from "./base";
+import { usePopularPlaces } from "../api";
 
 const PlaceContainer  = ({tabs, label }) => {
   const [filterID, setFilterID] = useState(1)
-  const data = usePlaces(filterID)
+  const data = usePopularPlaces(filterID)
 
   const onFilterChange = useCallback((id) => {
     setFilterID(id)

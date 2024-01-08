@@ -11,7 +11,7 @@ function App() {
       <HeroPage />
       <PlaceContainer tabs={tabs} label="Popular Places"/>
       <TourService />
-      <PlaceContainer tabs={tabs} label="Popular Places"/>
+      <PlaceContainer tabs={tabs} label="Explore Places"/>
       <MiniSquareCard />
       <ImageGallery />
       <LogoTitle />
