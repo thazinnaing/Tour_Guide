@@ -5,12 +5,14 @@ import CardGrid from "./CardGrid";
 import Tab from "./Tab";
 import { Div, H2 } from "./base";
 
-const PlaceContainer  = ({tabs, label, }) => {
+const PlaceContainer  = ({tabs, label }) => {
   const [filterID, setFilterID] = useState(1)
   const data = usePlaces(filterID)
+
   const onFilterChange = useCallback((id) => {
     setFilterID(id)
   },[])
+
   return (
     <Div>
       <H2>{label}</H2>
@@ -25,7 +27,5 @@ const PlaceContainer  = ({tabs, label, }) => {
     </Div>
   )
 }
-
-
 
 export default PlaceContainer;

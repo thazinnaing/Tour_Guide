@@ -8,3 +8,4 @@ import PlaceContainer from "./PlaceContainer";
 import Tab from "./Tab";
 
 export { Card, Layout, Filter, FooterContact, FooterQLinks, ServiceLogo, Tab, PlaceContainer };
+export * from './Data';

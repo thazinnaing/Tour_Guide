@@ -1,14 +1,7 @@
 import './App.css'
 import { Layout, PlaceContainer } from './components'
 import { Footer, HeroPage, ImageGallery, LogoTitle, MiniSquareCard, Signup, TourService } from './pages'
-
-const tabs = [
-  {id: 0, title: "something"},
-  {id: 1, title: "something"},
-  {id: 2, title: "something"},
-  {id: 3, title: "something"},
-  {id: 'view_all', title: "view all"}
-]
+import { tabs } from './components'
 
 function App() {
 
