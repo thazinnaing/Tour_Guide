@@ -1,3 +1,5 @@
+import { Globe, Hotel, Utensils, Wifi } from "lucide-react"
+
 export const tabs = [
   {id: 0, title: "Beach"},
   {id: 1, title: "Mountain"},
@@ -11,4 +13,15 @@ export const navTabs = [
   {id: 1, title: "Category"},
   {id: 2, title: "Blog"},
   {id: 5, title: "About Us"}
+]
+
+export const logoData=[
+  [
+  {icon: Globe, title: "Flight"},
+  {icon: Wifi, title: "Wifi"}
+  ],
+  [
+  {icon: Hotel, title: "Hotel"},
+  {icon: Utensils, title: "Food"}
+  ]
 ]

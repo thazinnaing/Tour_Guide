@@ -1,25 +1,16 @@
-import { Globe, Hotel, Utensils, Wifi } from "lucide-react"
 import ServiceLogo from "../components/ServiceLogo"
 import { Div, H2, P } from "../components/base"
 import { cn } from "../utils"
+import { logoData } from "../components/Data"
 
-const logoData=[
-  [
-  {icon: Globe, title: "Flight"},
-  {icon: Wifi, title: "Wifi"}
-  ],
-  [
-  {icon: Hotel, title: "Hotel"},
-  {icon: Utensils, title: "Food"}
-  ]
-]
+
 const TourService = () => {  
   return (
-    <Div className={cn('flex gap-10')}>
-      <Div className={cn('w-1/2 bg-gray-700')}>
-          aa
+    <Div className={cn('w-full grid grid-cols-1 sm:grid-cols-2 gap-10')}>
+      <Div className={cn('w-[100%] h-72 sm:h-auto bg-gray-700')}>
+          
       </Div>
-      <Div className={cn('flex flex-col w-1/2 gap-4')}>
+      <Div className={cn('flex flex-col w-[100%] gap-4')}>
         <Div>
           <H2>Explore all corners of</H2>
           <H2>The world with us</H2>
