@@ -1,4 +1,4 @@
-import { Div, P, H2 } from "../components/base"
+import { Div, P, H2, H3 } from "../components/base"
 import { cn } from "../utils"
 
 const ImageGallery = () => {
@@ -10,7 +10,7 @@ const ImageGallery = () => {
           <P className={cn('')}>-Share Your Happy Momment</P>
         </Div>
         <Div>
-          <P className={cn('text-secondary')}>View all</P>
+          <H3 className={cn('text-secondary')}>View all</H3>
         </Div>
       </Div>
       <Div className={cn('flex gap-5')}>
@@ -26,9 +26,6 @@ const ImageGallery = () => {
           <img className={cn('h-52 rounded-md')} src="https://images.unsplash.com/photo-1642928614293-ba6ff94b4a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsbGluZyUyMGF0JTIwaWNlYmVyZ3N8ZW58MHx8MHx8fDA%3D" />
           <img className={cn('h-96 rounded-md')} src="https://images.unsplash.com/photo-1430462708036-7ef5363d56d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbGxpbmclMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D" />
         </Div>
-        
-        
-
       </Div>
     </Div>
     

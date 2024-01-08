@@ -1,4 +1,4 @@
-import { Globe, Hotel, Utensils, Wifi } from "lucide-react"
+import { Fan, Globe, Hotel, Utensils, Wifi } from "lucide-react"
 
 export const tabs = [
   {id: 0, title: "Beach"},
@@ -31,4 +31,12 @@ export const squareCardData = [
   {amount: "700+", title: "Places"},
   {amount: "200+", title: "Hotel"},
   {amount: "2k+", title: "Review"}
+]
+
+export const logo = [
+  {icon: Fan, title:"aven"},
+  {icon: Fan, title: "HEXLAB"},
+  {icon: Fan, title: "kanba"},
+  {icon: Fan, title: "liva"},
+  {icon: Fan, title: "amara"}
 ]
