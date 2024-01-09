@@ -1,5 +1,5 @@
 import "./App.css";
-import { Layout } from "./components";
+import { Layout, Theme } from "./components";
 import {
   ExplorePlaces,
   Footer,
@@ -11,11 +11,14 @@ import {
   Signup,
   TourService,
 } from "./pages";
+import ColorSchemeProvider from "./provider/ColorScheme";
+import { cn } from "./utils";
 
 function App() {
   return (
-    <>
+    <ColorSchemeProvider>
       <Layout>
+        <Theme className={cn('fixed right-10 top-32 p-3 rounded-full bg-gray-100 text-secondary dark:text-red-600')}/>
         <HeroPage />
         <PopularPlaces />
         <TourService />
@@ -26,7 +29,7 @@ function App() {
         <Signup />
         <Footer />
       </Layout>
-    </>
+    </ColorSchemeProvider>
   );
 }
 
