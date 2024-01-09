@@ -4,7 +4,7 @@ import { cn } from "../utils"
 const Signup = () => {
   return (
     <Div className={cn('w-full flex flex-col gap-6 justify-center items-center')}>
-      <H2 className={cn('text-base xs:text-lg sm:text-xl')}>Sign up to our newsletter</H2>
+      <H2 className={cn('text-base xs:text-lg sm:text-xl md:text-2xl')}>Sign up to our newsletter</H2>
       <Div className={cn('flex h-14 sm:h-16 w-full xs:w-2/3 rounded-md shadow-custom')}>
         <Div className={cn('flex w-3/4 sm:w-5/6 justify-center items-center')}>
           <Input className={cn('w-full')} type="text" placeholder="Enter your email here" />

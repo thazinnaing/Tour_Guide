@@ -7,17 +7,17 @@ import { AlignJustify, PlaneTakeoff } from "lucide-react";
 const Navigation = () => {
   return (
     <Div className={cn('flex justify-between items-center')}>
-      <Div className={cn('flex justify-center items-center ')}>
+      <Div className={cn('flex justify-center items-center gap-1 ')}>
         <Div>
           <PlaneTakeoff size={30} className={cn('text-secondary')}/>
         </Div>
         <Div className={cn('flex items-center justify-center')}>
-          <H3>Touro</H3>
+          <H3 className={cn('sm:text-xl')}>Touro</H3>
         </Div>
       </Div>
       <Div className={cn('sm:flex justify-between items-center hidden sm:gap-5 md:gap-10')}>
         {navTabs.map(tab => (
-            <Tab className={cn('text-sm xs:text-base xs:font-semibold')} key={tab.id} data={tab}/>
+            <Tab key={tab.id} data={tab}/>
           )
         )}
       </Div>
