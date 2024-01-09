@@ -15,20 +15,20 @@ const HeroPage = () => {
           </Div>
         </Div>
         <Div className={cn('w-full h-16 xs:h-20 grid grid-cols-4 rounded-lg shadow-custom')}>
-          <Div className={cn('flex justify-between')}>
+          <Div className={cn('flex justify-between dark:bg-white dark:text-black')}>
             <Filter type="Located in" data="bangladesh" />
-            <Div className={cn('py-3 xs:py-5 sm:py-4')}>
-              <Divider className={cn('bg-gray-300 ')}/>
+            <Div className={cn('py-3 xs:py-5 sm:py-4 dark:bg-white dark:text-black ')}>
+              <Divider className={cn('bg-gray-300 dark:bg-gray-300')}/>
             </Div>
           </Div>
-          <Div className={cn('flex justify-between')}>
+          <Div className={cn('flex justify-between dark:bg-white dark:text-black')}>
             <Filter type="Date" data="Wed_7 Nov" />
-            <Div className={cn('py-3 xs:py-5 sm:py-4')}>
-              <Divider className={cn('bg-slate-300')}/>
+            <Div className={cn('py-3 xs:py-5 sm:py-4 dark:bg-white dark:text-black')}>
+              <Divider className={cn('bg-gray-300 dark:bg-gray-300')}/>
             </Div>
           </Div>
           <Filter type="Price Range" data="$400-$700" />
-          <Div className={cn('h-16 xs:h-20 flex justify-center items-center bg-primary hover:bg-sky-400 active:bg-sky-500 text-white rounded-e-lg')}>
+          <Div className={cn('h-16 xs:h-20 flex justify-center items-center bg-primary dark:bg-primary hover:bg-sky-400 active:bg-sky-500 text-white rounded-e-lg')}>
             <H3 className={cn('md:text-lg lg:text-xl')}>Search</H3>
           </Div>
         </Div>

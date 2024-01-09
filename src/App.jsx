@@ -18,7 +18,7 @@ function App() {
   return (
     <ColorSchemeProvider>
       <Layout>
-        <Theme className={cn('fixed right-10 top-32 p-3 rounded-full bg-gray-100 text-secondary dark:text-red-600')}/>
+        <Theme className={cn('fixed right-10 top-32 p-3 z-50 rounded-full bg-gray-600 dark:bg-gray-100 text-secondary dark:text-secondary')}/>
         <HeroPage />
         <PopularPlaces />
         <TourService />

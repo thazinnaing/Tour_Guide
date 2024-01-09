@@ -22,7 +22,7 @@ const Tab = ({ data, onClick, isActive, ...rest }) => {
       >
         {data.title}
       </P>
-      { isActive && <Divider horizontal className={cn('bg-secondary opacity-70 ')} />}
+      { isActive && <Divider horizontal className={cn('bg-secondary dark:bg-secondary opacity-70 ')} />}
     </Div>
   );
 };
