@@ -14,7 +14,11 @@ const CardGrid = ({cards}) => {
             })
           } 
         </Div>
-        : <H2 className={cn('text-center')}> No Result</H2>
+        : 
+        <Div className={cn('p-10 shadow-custom')}>
+          <H2 className={cn('text-center')}> No Result</H2>
+        </Div>
+        
       }
     </Div>
   )

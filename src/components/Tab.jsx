@@ -15,7 +15,7 @@ const Tab = ({ data, onClick, filterID, ...rest }) => {
     <Div onClick={onClickX} {...rest}>
       <H3
         className={cn(
-          "cursor-pointer mb-1",
+          "cursor-pointer mb-1 hover:text-secondary",
           typeof data.id === "string" && "text-secondary"
         )}
       >
