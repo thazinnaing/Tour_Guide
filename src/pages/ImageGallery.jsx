@@ -10,7 +10,7 @@ const ImageGallery = () => {
           <P className={cn('')}>-Share Your Happy Momment</P>
         </Div>
         <Div>
-          <H3 className={cn('text-secondary')}>View all</H3>
+          <H3 className={cn('text-secondary cursor-pointer')}>View all</H3>
         </Div>
       </Div>
 

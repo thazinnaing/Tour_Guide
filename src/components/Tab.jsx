@@ -21,7 +21,7 @@ const Tab = ({ data, onClick, filterID, ...rest }) => {
       >
         {data.title}
       </H3>
-      {filterID === data.id && <Div> <Divider horizontal={true} className={cn('bg-secondary')} /></Div>}
+      {filterID === data.id && <Div> <Divider horizontal={true} className={cn('bg-secondary opacity-70 ')} /></Div>}
     </Div>
   );
 };

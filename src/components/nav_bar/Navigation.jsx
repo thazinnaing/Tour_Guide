@@ -18,7 +18,7 @@ const Navigation = () => {
         )}
       </Div>
       <Div className={cn('flex gap-10')}>
-        <Button className={cn('bg-secondary px-5 py-2')}>Login</Button>
+        <Button className={cn('bg-secondary px-5 py-2 hover:bg-orange-300 active:bg-orange-500')}>Login</Button>
         <Div className={cn('flex items-center sm:hidden')}>
           <AlignJustify size={30}/>
         </Div>

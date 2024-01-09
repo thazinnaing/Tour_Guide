@@ -9,7 +9,7 @@ const Signup = () => {
         <Div className={cn('flex w-5/6 justify-center items-center')}>
           <Input className={cn('w-full')} type="text" placeholder="Enter your email here" />
         </Div>
-        <Div className={cn('bg-primary w-1/6 px-5 flex justify-center items-center text-white rounded-r-md')}>
+        <Div className={cn('bg-primary w-1/6 px-5 flex justify-center items-center text-white rounded-r-md cursor-pointer hover:bg-blue-300 active:bg-blue-500')}>
           Submit
         </Div>
       </Div>
