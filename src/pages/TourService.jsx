@@ -1,8 +1,7 @@
 import ServiceLogo from "../components/ServiceLogo"
-import { Div, H2, H3, Img, P } from "../components/base"
+import { Div, H2, Img, P } from "../components/base"
 import { cn } from "../utils"
 import { logoData } from "../components/Data"
-
 
 const TourService = () => {  
   return (

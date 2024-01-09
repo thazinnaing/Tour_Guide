@@ -20,7 +20,7 @@ const PlaceContainer  = () => {
       <Div className={cn('flex sm:justify-end')}>
         <Div className={cn('flex justify-between mt-4 mb-5 sm:mt-2 sm:mb-8 md:mb-8 w-full sm:w-2/3 md:w-1/2')}>
           {tabs.map(tab => (
-            <Tab data={tab} key={tab.id} onClick={onFilterChange}/>
+            <Tab data={tab} key={tab.id} filterID={filterID} onClick={onFilterChange}/>
           ))}
         </Div>
       </Div>
