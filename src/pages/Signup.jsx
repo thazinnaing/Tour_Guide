@@ -3,7 +3,7 @@ import { cn } from "../utils"
 
 const Signup = () => {
   return (
-    <Div className={cn('w-full flex flex-col gap-5 justify-center items-center')}>
+    <Div className={cn('w-full flex flex-col gap-6 justify-center items-center')}>
       <H2>Sign up to our newsletter</H2>
       <Div className={cn('flex h-16 w-2/3 rounded-md shadow-custom')}>
         <Div className={cn('flex w-4/6 sm:w-5/6 justify-center items-center')}>

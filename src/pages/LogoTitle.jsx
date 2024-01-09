@@ -3,8 +3,8 @@ import { cn } from "../utils"
 import { logo } from "../components"
 
 const LogoTitle = () => {
-  const content = logo.map((logo, index)=>(
-      <Div key={index} className={cn('flex justify-center items-center gap-1')}>
+  const content = logo.map((logo)=>(
+      <Div key={logo.id} className={cn('flex justify-center items-center gap-1')}>
         <logo.icon size={20}/>
         <P className={cn('text-sm sm:text-xl sm:font-semibold')}>{logo.title}</P>
       </Div>

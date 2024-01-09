@@ -2,9 +2,9 @@ import { cn } from "../utils"
 import { Div } from "./base"
 
 const ServiceLogo = ({logoData}) => {
-  const content = logoData.map((data, index)=>{
+  const content = logoData.map((data)=>{
     return(
-      <Div key={index} className={cn('flex flex-col gap-2 md:gap-3')}>
+      <Div key={data.id} className={cn('flex flex-col gap-2 md:gap-3')}>
         <Div className={cn('text-secondary w-12 flex justify-center items-center shadow-sm rounded-md p-2')}>
           <data.icon/>
         </Div>

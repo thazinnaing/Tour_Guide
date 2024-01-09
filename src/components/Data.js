@@ -1,4 +1,4 @@
-import { Fan, Globe, Hotel, Utensils, Wifi } from "lucide-react"
+import { Fan, Globe, Hotel, Mail, MapPin, Phone, Utensils, Wifi } from "lucide-react"
 
 export const tabs = [
   {id: 0, title: "Beach"},
@@ -17,26 +17,38 @@ export const navTabs = [
 
 export const logoData=[
   [
-  {icon: Globe, title: "Flight"},
-  {icon: Wifi, title: "Wifi"}
+  {id:0, icon: Globe, title: "Flight"},
+  {id:1, icon: Wifi, title: "Wifi"}
   ],
   [
-  {icon: Hotel, title: "Hotel"},
-  {icon: Utensils, title: "Food"}
+  {id:2, icon: Hotel, title: "Hotel"},
+  {id:3, icon: Utensils, title: "Food"}
   ]
 ]
 
 export const squareCardData = [
-  {amount: "24+", title: "Cities"},
-  {amount: "700+", title: "Places"},
-  {amount: "200+", title: "Hotel"},
-  {amount: "2k+", title: "Review"}
+  {id:0, amount: "24+", title: "Cities"},
+  {id:1, amount: "700+", title: "Places"},
+  {id:2, amount: "200+", title: "Hotel"},
+  {id:3, amount: "2k+", title: "Review"}
 ]
 
 export const logo = [
-  {icon: Fan, title:"aven"},
-  {icon: Fan, title: "HEXLAB"},
-  {icon: Fan, title: "kanba"},
-  {icon: Fan, title: "liva"},
-  {icon: Fan, title: "amara"}
+  {id:0, icon: Fan, title:"aven"},
+  {id:1, icon: Fan, title: "HEXLAB"},
+  {id:2, icon: Fan, title: "kanba"},
+  {id:3, icon: Fan, title: "liva"},
+  {id:4, icon: Fan, title: "amara"}
+]
+
+export const links = [
+  {id: 0, title: "FAQs"},
+  {id: 1, title: "Privacy"},
+  {id: 2, title: "Term & Conditions"},
+  {id: 5, title: "Support"}
+]
+export const contactData = [
+  {id:0, icon: MapPin, data: "342 Blone Street, Wisconsing United Staids"},
+  {id:1, icon: Phone, data: "2145-5467-5378"},
+  {id:2, icon: Mail, data: "tour@agency.com"}
 ]
