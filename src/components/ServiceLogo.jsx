@@ -8,7 +8,7 @@ const ServiceLogo = ({logoData}) => {
         <Div className={cn('text-secondary w-12 flex justify-center items-center shadow-sm rounded-md p-2')}>
           <data.icon/>
         </Div>
-        <Div>
+        <Div className={cn('px-2')}>
           {data.title}
         </Div>
       </Div>
@@ -16,7 +16,7 @@ const ServiceLogo = ({logoData}) => {
   })
 
   return (
-    <Div className={cn('flex w-1/2 flex-col gap-4')}>
+    <Div className={cn('flex w-2/5 sm:w-1/2 lg:w-1/3 flex-col gap-4')}>
       {content}
     </Div>
   )
