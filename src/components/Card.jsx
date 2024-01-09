@@ -3,7 +3,7 @@ import { Div, H3, Img, P } from "./base";
 
 const Card = ({card}) => {
   return (
-    <Div className={cn('shadow-custom w-auto rounded-md overflow-hidden flex flex-col')}>
+    <Div className={cn('shadow-custom sm:shadow-none w-auto rounded-md overflow-hidden flex flex-col transition duration- ease-in-out transform hover:-translate-y-1 md:hover:-translate-y-1.5 hover:shadow-custom')}>
       <Div className={cn('flex-1')}>
         <Img className={cn('h-64 w-full sm:w-max-full rounded-ss-md object-fill')} src={card.image} alt="" />
       </Div>

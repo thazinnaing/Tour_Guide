@@ -1,25 +1,33 @@
-import './App.css'
-import { Layout } from './components'
-import { Footer, HeroPage, ImageGallery, LogoTitle, MiniSquareCard, PlaceContainer, Signup, TourService } from './pages'
-import ExplorePlaceContainer from './pages/ExplorePlaceContainer'
+import "./App.css";
+import { Layout } from "./components";
+import {
+  ExplorePlaces,
+  Footer,
+  HeroPage,
+  ImageGallery,
+  LogoTitle,
+  MiniSquareCard,
+  PopularPlaces,
+  Signup,
+  TourService,
+} from "./pages";
 
 function App() {
-
   return (
     <>
-    <Layout>
-      <HeroPage />
-      <PlaceContainer />
-      <TourService />
-      <ExplorePlaceContainer />
-      <MiniSquareCard />
-      <ImageGallery />
-      <LogoTitle />
-      <Signup />
-      <Footer/>
-    </Layout>
+      <Layout>
+        <HeroPage />
+        <PopularPlaces />
+        <TourService />
+        <ExplorePlaces />
+        <MiniSquareCard />
+        <ImageGallery />
+        <LogoTitle />
+        <Signup />
+        <Footer />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
