@@ -12,6 +12,12 @@ export default {
       },
       screens: {
         'xs' : '480px',
+      },
+      height: {
+        '120': '30rem',
+      },
+      fontSize: {
+        '2xs': '0.5rem'
       }
     },
   },

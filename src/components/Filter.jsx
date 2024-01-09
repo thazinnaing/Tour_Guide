@@ -1,16 +1,19 @@
-
 import { ChevronDown } from 'lucide-react';
-import { ICON_SIZE, cn } from '../utils';
-import { Div, H3, P } from './base';
+import { cn } from '../utils';
+import { Div, P } from './base';
+
 const Filter = ({type, data, className, ...rest}) => {
   return (
-    <Div className={cn("p-4",className)} {...rest}>
-      <P className='text-primary'>{type}</P>
-      <Div className={cn('flex justify-between items-center gap-4')}>
-        <H3>{data}</H3>
-        <ChevronDown size={ICON_SIZE} className='text-primary' />
+    <Div className={cn('flex px-1 xs:px-2 lg:px-4 items-center')}>
+      <Div className={cn("text-2xs xs:text-xs sm:lg:text-sm md:text-xs flex flex-col gap-2",className)} {...rest}>
+        <P className='text-primary'>{type}</P>
+        <Div className={cn('flex items-center gap-1 xs:gap-3 md:gap-2 lg:gap-3')}>
+          <P className={cn('xs:font-semibold')}>{data}</P>
+          <ChevronDown className={cn('text-primary w-3 xs:h-3 sm:w-4 md:h-4 lg:w-6 lg:h-6')} />
+        </Div>
       </Div>
     </Div>
+    
   )
 }
 
