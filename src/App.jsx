@@ -1,7 +1,7 @@
 import './App.css'
-import { Layout, PlaceContainer } from './components'
-import { Footer, HeroPage, ImageGallery, LogoTitle, MiniSquareCard, Signup, TourService } from './pages'
-import { tabs } from './components'
+import { Layout } from './components'
+import { Footer, HeroPage, ImageGallery, LogoTitle, MiniSquareCard, PlaceContainer, Signup, TourService } from './pages'
+import ExplorePlaceContainer from './pages/ExplorePlaceContainer'
 
 function App() {
 
@@ -9,9 +9,9 @@ function App() {
     <>
     <Layout>
       <HeroPage />
-      <PlaceContainer tabs={tabs} label="Popular Places"/>
+      <PlaceContainer />
       <TourService />
-      <PlaceContainer tabs={tabs} label="Explore Places"/>
+      <ExplorePlaceContainer />
       <MiniSquareCard />
       <ImageGallery />
       <LogoTitle />
