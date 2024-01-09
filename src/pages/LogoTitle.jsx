@@ -1,17 +1,17 @@
-import {Div, P} from "../components/base"
+import {Div, H3} from "../components/base"
 import { cn } from "../utils"
 import { logo } from "../components"
 
 const LogoTitle = () => {
   const content = logo.map((logo)=>(
-      <Div key={logo.id} className={cn('flex justify-center items-center gap-1')}>
-        <logo.icon size={20}/>
-        <P className={cn('text-sm sm:text-xl sm:font-semibold')}>{logo.title}</P>
+      <Div key={logo.id} className={cn('flex items-center gap-1 md:gap-2')}>
+        <logo.icon size={22} />
+        <H3 className={cn('text-l sm:text-xl md:text-2xl sm:font-semibold')}>{logo.title}</H3>
       </Div>
     )
   )
   return (
-    <Div className={cn('flex text-gray-400 justify-between')}>
+    <Div className={cn('grid grid-cols-2 sm:grid-cols-5 text-gray-400 gap-2 sm:gap-4')}>
       {content}
     </Div>
   )
