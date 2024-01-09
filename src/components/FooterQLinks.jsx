@@ -5,7 +5,7 @@ const FooterQLinks = ({ links, className }) => {
 
   const content = links.map((link) => (<P key={link.id}>{link.title}</P>));
 
-  return <Div className={cn("flex flex-col gap-2", className)}>{content}</Div>;
+  return <Div className={cn("flex flex-col gap-2 text-xs sm:text-base", className)}>{content}</Div>;
 };
 
 export default FooterQLinks;

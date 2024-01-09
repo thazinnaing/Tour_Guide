@@ -12,7 +12,7 @@ const Tab = ({ data, onClick, filterID, ...rest }) => {
   }
 
   return (
-    <Div onClick={onClickX} {...rest}>
+    <Div className={cn('flex items-center')} onClick={onClickX} {...rest}>
       <H3
         className={cn(
           "cursor-pointer mb-1 hover:text-secondary",

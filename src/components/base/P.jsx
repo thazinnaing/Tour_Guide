@@ -1,5 +1,7 @@
-export const P = ({children, ...rest}) => {
+import { cn } from "../../utils"
+
+export const P = ({children, className, ...rest}) => {
   return (
-    <p {...rest}>{children}</p>
+    <p className={cn('',className)} {...rest}>{children}</p>
   )
 }

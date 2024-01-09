@@ -4,11 +4,11 @@ import { Div, P } from "./base"
 const FooterContact = ({contacts}) => {
 
     const content = contacts.map((contact)=>(
-        <Div key={contact.id} className={cn('flex gap-3 ')}>
-          <Div className={cn('flex py-1 justify-center ')}>
-            <contact.icon size={17} className={cn('text-secondary')}/>
+        <Div key={contact.id} className={cn('flex gap-2 sm:gap-3 ')}>
+          <Div className={cn('flex justify-center ')}>
+            <contact.icon className={cn('w-5 h-5 sm:w-6 sm:h-6 text-secondary')}/>
           </Div>
-          <P>{contact.data}</P>
+          <P className={cn('text-xs sm:text-base')}>{contact.data}</P>
         </Div>
       )
     )

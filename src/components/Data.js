@@ -29,8 +29,8 @@ export const logoData=[
 export const squareCardData = [
   {id:0, amount: "24+", title: "Cities"},
   {id:1, amount: "700+", title: "Places"},
-  {id:2, amount: "200+", title: "Hotel"},
-  {id:3, amount: "2k+", title: "Review"}
+  {id:2, amount: "200+", title: "Hotels"},
+  {id:3, amount: "2k+", title: "Reviews"}
 ]
 
 export const logo = [
