@@ -17,7 +17,7 @@ const Navigation = () => {
       </Div>
       <Div className={cn('sm:flex justify-between items-center hidden sm:gap-5 md:gap-10')}>
         {navTabs.map(tab => (
-            <Tab key={tab.id} data={tab}/>
+            <Tab className={cn('text-sm xs:text-base xs:font-semibold')} key={tab.id} data={tab}/>
           )
         )}
       </Div>

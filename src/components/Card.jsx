@@ -9,8 +9,8 @@ const Card = ({card}) => {
       </Div>
       <Div className={cn("px-2 py-3")}>
         <Div className={cn('flex flex-col gap-1')}>
-          <H3>{card.title}</H3>
-          <P>{card.description}</P>
+          <H3 className={cn('text-sm xs:text-base')}>{card.title}</H3>
+          <P className={cn('text-sm xs:text-base')}>{card.description}</P>
         </Div>
       </Div>
     </Div>

@@ -16,7 +16,7 @@ const ExplorePlaceContainer  = () => {
 
   return (
     <Div className={cn('flex flex-col')}>
-      <H2>Explore Places</H2>
+      <H2 className={cn('text-lg xs:text-xl sm:text-2xl')}>Explore Places</H2>
       <Div className={cn('flex sm:justify-end')}>
         <Div className={cn('flex justify-between mt-4 mb-5 sm:mt-2 sm:mb-8 md:mb-8 w-full sm:w-2/3 md:w-1/2')}>
           {tabs.map(tab => (

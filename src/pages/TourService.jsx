@@ -13,7 +13,7 @@ const TourService = () => {
       </Div>
       <Div className={cn('flex flex-col gap-4')}>
         <Div>
-          <H2>Explore all corners of The world with us</H2>
+          <H2 className={cn('text-lg xs:text-xl sm:text-2xl')}>Explore all corners of The world with us</H2>
         </Div>
         <Div>
           <P>Travel is fatal to prejudice, and narrow mindedness. <br/> And many of our people need it sorely on these accounts.<br/> And many of our people need sorely.</P>

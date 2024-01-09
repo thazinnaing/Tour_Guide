@@ -3,10 +3,10 @@ import { cn } from "../utils"
 
 const ImageGallery = () => {
   return (
-    <Div className={cn('flex flex-col gap-5')}>
+    <Div className={cn('flex flex-col gap-5 sm:gap-6')}>
       <Div className={cn('flex justify-between items-center')}>
         <Div className={cn('flex flex-col sm:flex-row sm:items-end  gap-3')}>
-          <H2>Our Gallery</H2>
+          <H2 className={cn('text-lg xs:text-xl sm:text-2xl')}>Our Gallery</H2>
           <P className={cn('')}>-Share Your Happy Momment</P>
         </Div>
         <Div>
