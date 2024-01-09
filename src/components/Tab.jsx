@@ -1,8 +1,8 @@
 import { useCallback } from "react";
-import { Div, Divider, H3 } from "./base";
+import { Div, Divider, H3, P } from "./base";
 import { cn } from "../utils";
 
-const Tab = ({ data, onClick, filterID, ...rest }) => {
+const Tab = ({ data, className, onClick, filterID, ...rest }) => {
   const onClickX = useCallback(() => {
     onClick(data.id);
   }, [data, onClick]);
@@ -13,14 +13,15 @@ const Tab = ({ data, onClick, filterID, ...rest }) => {
 
   return (
     <Div className={cn('flex items-center')} onClick={onClickX} {...rest}>
-      <H3
+      <P
         className={cn(
           "cursor-pointer mb-1 hover:text-secondary",
+          className,
           typeof data.id === "string" && "text-secondary"
         )}
       >
         {data.title}
-      </H3>
+      </P>
       {filterID === data.id && <Div> <Divider horizontal={true} className={cn('bg-secondary opacity-70 ')} /></Div>}
     </Div>
   );
