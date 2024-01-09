@@ -12,16 +12,16 @@ const Footer = () => {
           <PlaneTakeoff className={cn('text-secondary')}/>
           <H3>Touro</H3>
         </Div>
-        <Div className={cn('flex flex-col text-xs sm:text-base sm:gap-2')}>
+        <Div className={cn('flex flex-col text-xs xs:text-base sm:gap-2')}>
           <P>Travel is fatal to prejudice,</P>
           <P>and narrow mindedness</P>
           <P>And many of people.</P>
         </Div>
-        <Div className={cn('flex gap-2 sm:gap-4 text-gray-400')}>
-          <Facebook className={cn('text-secondary w-5 h-5')}/>
-          <Twitter className={cn('w-5 h-5 sm:w-6 sm:h-6')}/>
-          <Instagram className={cn('w-5 h-5 sm:w-6 sm:h-6')}/>
-          <Linkedin className={cn('w-5 h-5 sm:w-6 sm:h-6')}/>
+        <Div className={cn('flex gap-2 xs:gap-4 text-gray-400')}>
+          <Facebook className={cn('text-secondary w-5 h-5 xs:w-6 xs:h-6')}/>
+          <Twitter className={cn('w-5 h-5 xs:w-6 xs:h-6')}/>
+          <Instagram className={cn('w-5 h-5 xs:w-6 xs:h-6')}/>
+          <Linkedin className={cn('w-5 h-5 xs:w-6 xs:h-6')}/>
         </Div>
       </Div>
       <Div className={cn('flex flex-col gap-3')}>

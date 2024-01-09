@@ -20,7 +20,7 @@ const ExplorePlaceContainer  = () => {
       <Div className={cn('flex sm:justify-end')}>
         <Div className={cn('flex justify-between mt-4 mb-5 sm:mt-2 sm:mb-8 md:mb-8 w-full sm:w-2/3 md:w-1/2')}>
           {tabs.map(tab => (
-            <Tab className={cn('text-sm sm:text-base font-semibold')} data={tab} key={tab.id} filterID={filterId} onClick={onFilterChange}/>
+            <Tab className={cn('text-sm xs:text-base xs:font-semibold')} data={tab} key={tab.id} filterID={filterId} onClick={onFilterChange}/>
           ))}
         </Div>
       </Div>

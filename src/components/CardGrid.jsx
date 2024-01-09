@@ -6,7 +6,7 @@ const CardGrid = ({cards}) => {
   return (
     <Div>
       {cards.length > 0 ?     
-        <Div className={cn('grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5')}>
+        <Div className={cn('grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5')}>
           {cards.map(card => {
               return (
                 <Card key={card.id} card={card} />

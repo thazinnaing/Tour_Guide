@@ -7,7 +7,7 @@ const TourService = () => {
   return (
     <Div className={cn('w-full sm:h-96 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0')}>
       <Div className={cn('')}>
-        <Img className={cn('w-full h-72 sm:h-96 sm:max-w-full')} 
+        <Img className={cn('w-full h-72 xs:h-80 sm:h-96 sm:max-w-full')} 
           src="https://img.freepik.com/free-photo/tourist-with-thumb-up_1368-7035.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" 
           alt="" />
       </Div>

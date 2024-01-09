@@ -21,11 +21,11 @@ const Navigation = () => {
           )
         )}
       </Div>
-      <Div className={cn('flex justify-between gap-5')}>
+      <Div className={cn('flex justify-between gap-3 xs:gap-10')}>
         <Div>
           <Button className={cn('bg-secondary py-2 hover:bg-orange-300 active:bg-orange-500')}>Login</Button>
         </Div>
-        <Div className={cn('flex items-center ml-5 sm:hidden')}>
+        <Div className={cn('flex items-center sm:hidden')}>
           <AlignJustify size={30}/>
         </Div>
       </Div> 

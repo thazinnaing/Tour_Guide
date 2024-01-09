@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { Div, Divider, H3, P } from "./base";
+import { Div, Divider, P } from "./base";
 import { cn } from "../utils";
 
 const Tab = ({ data, className, onClick, filterID, ...rest }) => {
