@@ -22,8 +22,8 @@ const ColorSchemeProvider = ({ children }) => {
 
   useEffect(() => {
     if (
-      scheme === 'dark' ||
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme)').matches)
+      scheme === 'dark'
+      // || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme)').matches)
     ) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
