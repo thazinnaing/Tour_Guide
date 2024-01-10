@@ -12,7 +12,7 @@ const MiniSquareCard = () => {
   )
   
   return (
-    <Div className={cn('grid grid-cols-2 md:grid-cols-4 gap-5')}>
+    <Div className={cn('grid grid-cols-2 md:grid-cols-4 gap-4 xs:gap-5')}>
       {content}
     </Div>
   )

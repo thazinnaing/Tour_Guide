@@ -6,7 +6,7 @@ import { navTabs, links, contactData, FooterContact, FooterQLinks } from "../com
 const Footer = () => {
   
   return (
-    <Div className={cn('grid grid-cols-2 md:grid-cols-4 gap-3 2xs:gap-6')}>
+    <Div className={cn('grid grid-cols-2 md:grid-cols-4 gap-3 2xs:gap-4 xs:gap-6')}>
       <Div className={cn('flex flex-col gap-3')}>
         <Div className={cn('flex gap-3')}>
           <PlaneTakeoff className={cn('text-secondary')}/>
