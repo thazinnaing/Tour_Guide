@@ -16,7 +16,7 @@ const Tab = ({ data, onClick, isActive, ...rest }) => {
     <Div className={cn('flex flex-col items-center')} onClick={onClickX} {...rest}>
       <P
         className={cn(
-          "cursor-pointer mb-1 hover:text-secondary text-sm xs:text-base xs:font-semibold",
+          "cursor-pointer mb-1 hover:text-secondary text-xs 2xs:text-sm xs:text-base xs:font-semibold",
           typeof data.id === "string" && "text-secondary"
         )}
       >

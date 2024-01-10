@@ -7,10 +7,10 @@ const ImageGallery = () => {
       <Div className={cn('flex justify-between items-center')}>
         <Div className={cn('flex flex-col sm:flex-row sm:items-end  gap-3')}>
           <H2 className={cn('text-lg xs:text-xl sm:text-2xl md:text-3xl')}>Our Gallery</H2>
-          <P className={cn('')}>-Share Your Happy Momment</P>
+          <P className={cn('text-xs 2xs:text-base')}>-Share Your Happy Momment</P>
         </Div>
         <Div>
-          <H3 className={cn('text-secondary cursor-pointer')}>View all</H3>
+          <H3 className={cn('text-secondary cursor-pointer text-sm 2xs:text-base')}>View all</H3>
         </Div>
       </Div>
 
