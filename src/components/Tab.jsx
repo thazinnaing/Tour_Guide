@@ -3,7 +3,7 @@ import { Div, Divider, P } from "./base";
 import { cn } from "../utils";
 
 const Tab = ({ data, onClick, isActive, ...rest }) => {
-  console.log("isactive", isActive)
+  
   const onClickX = useCallback(() => {
     onClick(data.id);
   }, [data, onClick]);

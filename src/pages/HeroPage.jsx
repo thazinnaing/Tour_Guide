@@ -11,7 +11,7 @@ const HeroPage = () => {
             <H1 className={cn('text-2xl 2xs:text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl')}>Explore <br/> Beautiful <br/> World!</H1> 
           </Div>
           <Div className={cn('w-1/2 md:hidden')}>
-            <Img className={cn('object-fill w-full h-52 xs:h-64 sm:h-80 rounded-lg dark:rounded-lg')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
+            <Img className={cn('object-fill w-full mb-1 h-52 xs:h-64 sm:h-80 rounded-lg dark:rounded-lg')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
           </Div>
         </Div>
         <Div className={cn('w-full h-16 xs:h-20 grid grid-cols-4 rounded-lg shadow-custom dark:rounded-lg dark:shadow-custom')}>
