@@ -17,7 +17,7 @@ const Tab = ({ data, onClick, isActive, ...rest }) => {
       <P
         className={cn(
           "cursor-pointer mb-1 hover:text-secondary text-xs 2xs:text-sm xs:text-base xs:font-semibold",
-          typeof data.id === "string" && "text-secondary"
+          typeof data.id === "string" && "text-secondary hover:text-orange-300 active:text-orange-500"
         )}
       >
         {data.title}

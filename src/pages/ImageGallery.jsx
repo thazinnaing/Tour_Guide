@@ -10,7 +10,7 @@ const ImageGallery = () => {
           <P className={cn('text-xs 2xs:text-base')}>-Share Your Happy Momment</P>
         </Div>
         <Div>
-          <H3 className={cn('text-secondary cursor-pointer text-sm 2xs:text-base')}>View all</H3>
+          <H3 className={cn('text-secondary cursor-pointer text-sm 2xs:text-base hover:text-orange-300 active:text-orange-500')}>View all</H3>
         </Div>
       </Div>
 
