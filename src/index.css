@@ -8,7 +8,7 @@
   margin:0;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .dark{
   background: #000;
