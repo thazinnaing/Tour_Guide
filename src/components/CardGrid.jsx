@@ -15,7 +15,7 @@ const CardGrid = ({cards}) => {
           } 
         </Div>
         : 
-        <Div className={cn('p-10 shadow-custom')}>
+        <Div className={cn('p-10 shadow-custom rounded-lg dark:rounded-lg dark:bg-white dark:text-black dark:shadow-custom')}>
           <H2 className={cn('text-center')}> No Result</H2>
         </Div>
         

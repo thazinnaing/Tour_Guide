@@ -4,14 +4,14 @@ import { cn } from '../utils';
 
 const HeroPage = () => {
   return (
-    <Div className={cn('flex')}>
-      <Div className={cn('h-72 xs:h-80 sm:h-96 md:h-120 w-full md:w-3/5 flex flex-col justify-around ')}>
+    <Div className={cn('flex gap-3')}>
+      <Div className={cn('h-72 xs:h-80 sm:h-96 md:h-120 w-full md:w-3/5 flex flex-col justify-around')}>
         <Div className={cn('flex')}>
           <Div className={cn('w-1/2 md:w-full pt-8 xs:pt-10 sm:pt-12 md:pt-0')}>
             <H1 className={cn('text-2xl 2xs:text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl')}>Explore <br/> Beautiful <br/> World!</H1> 
           </Div>
           <Div className={cn('w-1/2 md:hidden')}>
-            <Img className={cn('object-fill w-full h-52 xs:h-64 sm:h-80')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
+            <Img className={cn('object-fill w-full h-52 xs:h-64 sm:h-80 rounded-lg dark:rounded-lg')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
           </Div>
         </Div>
         <Div className={cn('w-full h-16 xs:h-20 grid grid-cols-4 rounded-lg shadow-custom dark:rounded-lg dark:shadow-custom')}>
@@ -33,8 +33,8 @@ const HeroPage = () => {
           </Div>
         </Div>
       </Div>
-      <Div className={cn('xs:w-2/5 hidden md:flex')}>
-        <Img className={cn('object-fill w-full h-120')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
+      <Div className={cn('xs:w-2/5 hidden rounded-lg dark:rounded-lg md:flex')}>
+        <Img className={cn('object-fill rounded-lg dark:rounded-lg w-full h-120')} src="https://img.freepik.com/premium-photo/happy-family-warm-clothing-with-luggage-white-background-ready-winter-vacation_392895-57857.jpg?size=626&ext=jpg&ga=GA1.2.1633012741.1684645608&semt=ais" alt="" />
       </Div>
     </Div>
   )
