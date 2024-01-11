@@ -3,14 +3,19 @@ import Tab from "../Tab";
 import { Button, Div, H3 } from "../base";
 import { navTabs } from "../Data";
 import { AlignJustify, PlaneTakeoff } from "lucide-react";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 const Navigation = () => {
-  const [isClick, setIsClick]= useState(false);
+  const [isOpen, setIsOpen]= useState(false);
 
- const onClickHandler = () =>{
-  setIsClick(x => !x)
- }
+ const onClickHandler = useCallback(()=>{
+  setIsOpen(x=>!x)
+ },[setIsOpen])
+
+ const closeMenu= useCallback((id)=> {
+  console.log("side menu id",id)
+  setIsOpen(x=>!x)
+},[setIsOpen])
 
  const content = navTabs.map(tab=>(
   <Tab key={tab.id} data={tab} />
@@ -36,10 +41,10 @@ const Navigation = () => {
         <Div onClick={onClickHandler} className={cn('flex items-center sm:hidden')}>
           <AlignJustify size={30}/>
         </Div>
-        <Div className={cn('hidden', isClick && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300 xs:duration-500')} >
+        <Div className={cn('hidden', isOpen && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300 xs:duration-500')} >
           {navTabs.map(tab => {
             return(
-                <Tab key={tab.id} data={tab} className={cn('dark:bg-white dark:text-black')}/>
+                <Tab key={tab.id} data={tab} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
                 )
               })
           }

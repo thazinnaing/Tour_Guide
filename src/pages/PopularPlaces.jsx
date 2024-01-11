@@ -9,7 +9,7 @@ const PopularPlaces = () => {
 
   const onFilterChange = useCallback((id) => {
     setFilterId(id);
-  }, []);
+  }, [setFilterId]);
 
   return (
     <PlaceContainer
