@@ -7,18 +7,25 @@ import { useCallback, useState } from "react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen]= useState(false);
+  const [filterId, setFilterId]=useState();
+
+  console.log('filterId', filterId)
 
  const onClickHandler = useCallback(()=>{
   setIsOpen(x=>!x)
  },[setIsOpen])
 
+ const chooseMenu= useCallback((id)=> {
+  setFilterId(id)
+},[setFilterId])
+
  const closeMenu= useCallback((id)=> {
-  console.log("side menu id",id)
+  setFilterId(id)
   setIsOpen(x=>!x)
-},[setIsOpen])
+},[setIsOpen, setFilterId])
 
  const content = navTabs.map(tab=>(
-  <Tab key={tab.id} data={tab} />
+  <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={chooseMenu} />
  ))
 
   return (
@@ -44,7 +51,7 @@ const Navigation = () => {
         <Div className={cn('hidden', isOpen && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300')} >
           {navTabs.map(tab => {
             return(
-                <Tab key={tab.id} data={tab} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
+                <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
                 )
               })
           }
