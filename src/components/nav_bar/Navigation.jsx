@@ -41,7 +41,7 @@ const Navigation = () => {
         <Div onClick={onClickHandler} className={cn('flex items-center sm:hidden')}>
           <AlignJustify size={30}/>
         </Div>
-        <Div className={cn('hidden', isOpen && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300 xs:duration-500')} >
+        <Div className={cn('hidden', isOpen && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300')} >
           {navTabs.map(tab => {
             return(
                 <Tab key={tab.id} data={tab} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
