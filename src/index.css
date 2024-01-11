@@ -8,6 +8,7 @@
   margin:0;
 }
 body{
+  width:100%;
   overflow-x: hidden;
 }
 .dark{
