@@ -18,7 +18,7 @@ const Navigation = () => {
  ))
 
   return (
-    <Div className={cn('flex justify-between items-center')}>
+    <Div className={cn('flex justify-between items-center overflow-x-hidden')}>
       <Div className={cn('flex justify-center items-center gap-1 ')}>
         <Div>
           <PlaneTakeoff size={30} className={cn('text-secondary')}/>

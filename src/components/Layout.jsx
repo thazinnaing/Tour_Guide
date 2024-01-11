@@ -4,7 +4,7 @@ import { Navigation } from "./nav_bar";
 
 const Layout = ({children, className, ...rest}) => {
   return (
-    <Div className={cn("max-w-[1280px] mx-auto flex flex-col gap-12 p-3 2xs:p-5 xs:p-8 overflow-hidden", className)} {...rest}>
+    <Div className={cn("max-w-[1280px] mx-auto flex flex-col gap-12 p-3 2xs:p-5 xs:p-8 overflow-x-hidden", className)} {...rest}>
       <Navigation/>
       {children}
     </Div>
