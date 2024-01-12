@@ -7,7 +7,7 @@ import { useCallback, useState } from "react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen]= useState(false);
-  const [filterId, setFilterId]=useState();
+  const [filterId, setFilterId]=useState(0);
 
   console.log('filterId', filterId)
 
