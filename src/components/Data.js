@@ -9,10 +9,10 @@ export const tabs = [
 ]
 
 export const navTabs = [
-  {id: 0, title: "Home"},
-  {id: 1, title: "Category"},
-  {id: 2, title: "Blog"},
-  {id: 5, title: "About Us"}
+  {id: 0, title: "Home", url: "/"},
+  {id: 1, title: "Category", url: "/category"},
+  {id: 2, title: "Blog", url: "/blog"},
+  {id: 5, title: "About Us", url: "/about_us"}
 ]
 
 export const logoData=[

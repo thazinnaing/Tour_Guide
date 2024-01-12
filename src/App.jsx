@@ -1,34 +1,22 @@
 import "./App.css";
-import { Layout, Theme } from "./components";
-import {
-  ExplorePlaces,
-  Footer,
-  HeroPage,
-  ImageGallery,
-  LogoTitle,
-  MiniSquareCard,
-  PopularPlaces,
-  Signup,
-  TourService,
-} from "./pages";
+import { Layout} from "./components";
+import { AboutUs, Blog, Category, Home } from "./pages";
 import ColorSchemeProvider from "./provider/ColorScheme";
-import { cn } from "./utils";
+import { BrowserRouter, Route ,Routes} from "react-router-dom";
 
 function App() {
   return (
     <ColorSchemeProvider>
-      <Layout>
-        <Theme className={cn('fixed left-7 xs:left-10 top-20 xs:top-24 2xl:left-40 p-2 xs:p-3 z-50 rounded-full bg-gray-600 dark:bg-gray-100 text-secondary dark:text-secondary')}/>
-        <HeroPage />
-        <PopularPlaces />
-        <TourService />
-        <ExplorePlaces />
-        <MiniSquareCard />
-        <ImageGallery />
-        <LogoTitle />
-        <Signup />
-        <Footer />
-      </Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>} >
+            <Route index element={<Home/>}/>
+            <Route path="/category" element={<Category/>} />
+            <Route path="/blog" element={<Blog/>} />
+            <Route path="/about_us" element={<AboutUs/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </ColorSchemeProvider>
   );
 }
