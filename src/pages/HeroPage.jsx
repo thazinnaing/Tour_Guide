@@ -5,7 +5,7 @@ import { cn } from '../utils'
 const HeroPage = () => {
 
   return (
-    <Div className={cn('flex gap-3')}>
+    <Div className={cn('flex gap-3 mt-12')}>
       <Div className={cn('h-72 xs:h-80 sm:h-96 md:h-120 w-full md:w-3/5 flex flex-col justify-around')}>
         <Div className={cn('flex')}>
           <Div className={cn('w-1/2 md:w-full pt-8 xs:pt-10 sm:pt-12 md:pt-0')}>
