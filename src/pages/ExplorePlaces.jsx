@@ -7,8 +7,8 @@ const ExplorePlaces = () => {
   const [filterId, setFilterId] = useState(1);
   const data = useExplorePlaces(filterId);
 
-  const onFilterChange = useCallback((id) => {
-    setFilterId(id);
+  const onFilterChange = useCallback((data) => {
+    setFilterId(data.id);
   }, []);
 
   return (

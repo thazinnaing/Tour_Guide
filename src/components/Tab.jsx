@@ -5,7 +5,7 @@ import { cn } from "../utils";
 const Tab = ({ data, onClick, isActive, isNavActive, ...rest }) => {
   
   const onClickX = useCallback(() => {
-    onClick(data.id);
+    onClick(data);
   }, [data, onClick]);
 
   if (!data) {

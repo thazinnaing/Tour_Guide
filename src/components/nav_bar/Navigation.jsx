@@ -4,8 +4,10 @@ import { Button, Div, H3 } from "../base";
 import { navTabs } from "../Data";
 import { AlignJustify, PlaneTakeoff } from "lucide-react";
 import { useCallback, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen]= useState(false);
   const [filterId, setFilterId]=useState(0);
 
@@ -15,14 +17,16 @@ const Navigation = () => {
   setIsOpen(x=>!x)
  },[setIsOpen])
 
- const chooseMenu= useCallback((id)=> {
-  setFilterId(id)
-},[setFilterId])
+ const chooseMenu= useCallback((data)=> {
+  setFilterId(data.id)
+  navigate(data.url)
+},[setFilterId, navigate])
 
- const closeMenu= useCallback((id)=> {
-  setFilterId(id)
+ const closeMenu= useCallback((data)=> {
+  setFilterId(data.id)
   setIsOpen(x=>!x)
-},[setIsOpen, setFilterId])
+  navigate(data.url)
+},[setIsOpen, setFilterId, navigate])
 
  const content = navTabs.map(tab=>(
   <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={chooseMenu} />
@@ -48,7 +52,7 @@ const Navigation = () => {
         <Div onClick={onClickHandler} className={cn('flex items-center sm:hidden')}>
           <AlignJustify size={30}/>
         </Div>
-        <Div className={cn('hidden', isOpen && 'top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300')} >
+        <Div className={cn('hidden', isOpen && 'sm:hidden top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300')} >
           {navTabs.map(tab => {
             return(
                 <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
