@@ -19,8 +19,8 @@ const TourService = () => {
           <P>Travel is fatal to prejudice, and narrow mindedness. <br/> And many of our people need it sorely on these accounts.<br/> And many of our people need sorely.</P>
         </Div>
         <Div className={cn('flex')}>
-          <ServiceLogo logoData={logoData[0]}/>
-          <ServiceLogo logoData={logoData[1]}/>
+          <ServiceLogo className={cn('flex w-1/2 lg:w-1/3 flex-col gap-4')} logoData={logoData[0]}/>
+          <ServiceLogo className={cn('flex w-1/2 lg:w-1/3 flex-col gap-4')} logoData={logoData[1]}/>
         </Div>
       </Div>
     </Div>
