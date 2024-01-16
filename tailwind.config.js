@@ -13,7 +13,9 @@ export default {
       },
       screens: {
         'xs' : '480px',
-        '2xs' : '300px'
+        '2xs' : '300px',
+        '2xl' : '1440px',
+        '3xl:' : '1536px'
       },
       height: {
         '120': '30rem',
