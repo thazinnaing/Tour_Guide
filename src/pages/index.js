@@ -7,7 +7,6 @@ import LogoTitle from "./LogoTitle";
 import TourService from "./TourService";
 import ExplorePlaces from "./ExplorePlaces";
 import PopularPlaces from "./PopularPlaces";
-import Category from "./Category";
 import Blog from "./Blog";
 import AboutUs from "./AboutUs";
 import Home from "./Home";
@@ -23,7 +22,6 @@ export {
   ExplorePlaces,
   PopularPlaces,
   Home,
-  Category,
   Blog,
   AboutUs,
 };

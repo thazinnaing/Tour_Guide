@@ -11,22 +11,25 @@ const Navigation = () => {
   const [isOpen, setIsOpen]= useState(false);
   const [filterId, setFilterId]=useState(0);
 
-  console.log('filterId', filterId)
-
  const onClickHandler = useCallback(()=>{
   setIsOpen(x=>!x)
  },[setIsOpen])
 
+ const scrollRoute = useCallback(()=>{
+  const scrollSection = document.querySelector("#scroll");
+  scrollSection.scrollIntoView({behavior: 'smooth', block: 'start'})
+ },[])
+
  const chooseMenu= useCallback((data)=> {
   setFilterId(data.id)
-  navigate(data.url)
-},[setFilterId, navigate])
+  data.title === 'Category' ? scrollRoute() : navigate(data.url)
+},[setFilterId, navigate, scrollRoute])
 
  const closeMenu= useCallback((data)=> {
   setFilterId(data.id)
   setIsOpen(x=>!x)
-  navigate(data.url)
-},[setIsOpen, setFilterId, navigate])
+  data.title === 'Category' ? scrollRoute() : navigate(data.url)
+},[setIsOpen, setFilterId, navigate, scrollRoute])
 
  const content = navTabs.map(tab=>(
   <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={chooseMenu} />
