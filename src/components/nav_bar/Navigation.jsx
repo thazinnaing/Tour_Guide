@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Navigation = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen]= useState(false);
-  const [filterId, setFilterId]=useState(0);
+  const [filter, setFilter]=useState('home');
 
  const onClickHandler = useCallback(()=>{
   setIsOpen(x=>!x)
@@ -21,18 +21,18 @@ const Navigation = () => {
  },[])
 
  const chooseMenu= useCallback((data)=> {
-  setFilterId(data.id)
+  setFilter(data.category)
   data.title === 'Category' ? scrollRoute() : navigate(data.url)
-},[setFilterId, navigate, scrollRoute])
+},[setFilter, navigate, scrollRoute])
 
  const closeMenu= useCallback((data)=> {
-  setFilterId(data.id)
+  setFilter(data.category)
   setIsOpen(x=>!x)
   data.title === 'Category' ? scrollRoute() : navigate(data.url)
-},[setIsOpen, setFilterId, navigate, scrollRoute])
+},[setIsOpen, setFilter, navigate, scrollRoute])
 
  const content = navTabs.map(tab=>(
-  <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={chooseMenu} />
+  <Tab key={tab.id} data={tab} isNavActive={tab.category === filter} onClick={chooseMenu} />
  ))
 
   return (
@@ -58,7 +58,7 @@ const Navigation = () => {
         <Div className={cn('hidden', isOpen && 'sm:hidden top-14 2xs:top-16 xs:top-20 absolute right-3 2xs:right-5 xs:right-8 flex flex-col gap-2 p-3 w-20 2xs:w-28 xs:gap-3 xs:p-4 xs:w-32 dark:bg-white dark:text-black shadow-custom rounded-lg transition-all ease-in-out duration-300')} >
           {navTabs.map(tab => {
             return(
-                <Tab key={tab.id} data={tab} isNavActive={tab.id === filterId} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
+                <Tab key={tab.id} data={tab} isNavActive={tab.category === filter} onClick={closeMenu} className={cn('dark:bg-white dark:text-black')}/>
                 )
               })
           }

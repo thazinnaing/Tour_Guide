@@ -1,2 +1,2 @@
-export * from "./ExplorePlaces"
-export * from "./PopularPlaces"
+export * from "./usePlaces"
+export * from "./places"

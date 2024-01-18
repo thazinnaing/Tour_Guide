@@ -1,18 +1,18 @@
 import { Fan, Globe, Hotel, Mail, MapPin, Phone, Utensils, Wifi } from "lucide-react"
 
 export const tabs = [
-  {id: 0, title: "Beach"},
-  {id: 1, title: "Mountain"},
-  {id: 2, title: "Waterfall"},
-  {id: 3, title: "Icebergs"},
-  {id: 'view_all', title: "View all"}
+  {id: 0, title: "Beach", category: "beach"},
+  {id: 1, title: "Mountain", category: "mountain"},
+  {id: 2, title: "Waterfall", category: "waterfall"},
+  {id: 3, title: "Icebergs", category: "icebergs"},
+  {id: 'view_all', title: "View all", category: "view_all"}
 ]
 
 export const navTabs = [
-  {id: 0, title: "Home", url: "/"},
-  {id: 1, title: "Category"},
-  {id: 2, title: "Blog", url: "/blog"},
-  {id: 5, title: "About Us", url: "/about_us"}
+  {id: 0, title: "Home", category: "home", url: "/"},
+  {id: 1, title: "Category", category: "category"},
+  {id: 2, title: "Blog", category: "blog", url: "/blog"},
+  {id: 5, title: "About Us", category: "about_us", url: "/about_us"}
 ]
 
 export const logoData=[

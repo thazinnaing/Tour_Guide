@@ -3,7 +3,7 @@ import CardGrid from "./CardGrid";
 import Tab from "./Tab";
 import { Div, H2 } from "./base";
 
-const PlaceContainer = ({ label, filterId, tabs, onFilterChange, places }) => {
+const PlaceContainer = ({ label, filter, tabs, onFilterChange, places }) => {
   
   return (
     <Div className={cn("flex flex-col")}>
@@ -20,7 +20,7 @@ const PlaceContainer = ({ label, filterId, tabs, onFilterChange, places }) => {
             <Tab
               data={tab}
               key={tab.id}
-              isActive={filterId === tab.id}
+              isActive={filter === tab.category}
               onClick={onFilterChange}
             />
           ))}

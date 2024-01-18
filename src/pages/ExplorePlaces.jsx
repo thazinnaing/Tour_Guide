@@ -1,23 +1,25 @@
 import { useCallback, useState } from "react";
-import { useExplorePlaces } from "../api";
 import { tabs } from "../components";
 import {PlaceContainer} from "../components";
 import { Div } from "../components/base";
+import { useExplorePlaces } from "../api";
+
 
 const ExplorePlaces = () => {
-  const [filterId, setFilterId] = useState(1);
-  const data = useExplorePlaces(filterId);
+  const [filter, setFilter] = useState('beach');
+  
+  const data = useExplorePlaces(filter)
 
   const onFilterChange = useCallback((data) => {
-    setFilterId(data.id);
-  }, []);
+    setFilter(data.category);
+  }, [setFilter]);
 
   return (
     <Div id="scroll">
       <PlaceContainer
-        filterId={filterId}
+        filter={filter}
         label="Explore Places"
-        places={data?.places}
+        places={data}
         onFilterChange={onFilterChange}
         tabs={tabs}
       />

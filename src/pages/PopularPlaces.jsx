@@ -4,18 +4,18 @@ import {PlaceContainer} from "../components";
 import { usePopularPlaces } from "../api";
 
 const PopularPlaces = () => {
-  const [filterId, setFilterId] = useState(1);
-  const data = usePopularPlaces(filterId);
+  const [filter, setFilter] = useState('beach');
+  const data = usePopularPlaces(filter);
 
   const onFilterChange = useCallback((data) => {
-    setFilterId(data.id);
-  }, [setFilterId]);
+    setFilter(data.category);
+  }, [setFilter]);
 
   return (
     <PlaceContainer
-      filterId={filterId}
+      filter={filter}
       label="Popular Places"
-      places={data?.places}
+      places={data}
       onFilterChange={onFilterChange}
       tabs={tabs}
     />

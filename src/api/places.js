@@ -1,4 +1,4 @@
-const places =[
+export const places =[
       {
         id: 0,
         category: 'beach',
@@ -216,18 +216,3 @@ const places =[
         description: "This is amazing waterfall.",
       }
     ]
-
-export const Places = (category, isPopular) => {
-  if (category === "View All") {
-   
-    // const p = places.map((p) => p.places);
-    // const plc = p.flatMap((p) => p);
-
-    // return {
-    //   id: "view all",
-    //   places: plc,
-    // };
-  }
-  const p = places.filter((p) => p.category === category && p.isPopular === isPopular)[0];
-  return p;
-};
