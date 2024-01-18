@@ -8,7 +8,8 @@ const Detail = () => {
   const {id} = useParams('id');
   console.log("id",id)
 
-  const detail = places.find(p => id === p.id)
+  const detail = places.find(p => id === p.id.toString())
+  console.log("detail", detail)
 
   return (
     <Div className={cn('w-full flex flex-col gap-6 mt-12')}>
