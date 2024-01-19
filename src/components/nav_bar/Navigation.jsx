@@ -8,8 +8,26 @@ import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen]= useState(false);
-  const [filter, setFilter]=useState('home');
+  const [isOpen, setIsOpen] = useState(false);
+  const [filter, setFilter] = useState('home');
+  const [lastScroll, setLastScroll] = useState(0);
+  const [showNav, setShowNav] = useState(false)
+
+  console.log(lastScroll)
+
+  window.addEventListener('scroll', ()=>{
+  const scrollY = window.scrollY
+  console.log("scrolly", scrollY)
+  if(scrollY > 100){
+    if(lastScroll < scrollY){
+      setShowNav(false)
+    }
+    else{
+      setShowNav(true)
+    }
+  }
+  setLastScroll(scrollY)
+  })
 
  const onClickHandler = useCallback(()=>{
   setIsOpen(x=>!x)
@@ -36,7 +54,7 @@ const Navigation = () => {
  ))
 
   return (
-    <Div className={cn('flex justify-between items-center')}>
+    <Div className={cn('w-full flex justify-between items-center', (lastScroll > 100 && showNav) ? 'fixed z-10 top-0 py-4' : '-top-full' )}>
       <Div className={cn('flex justify-center items-center gap-1 ')}>
         <Div>
           <PlaneTakeoff size={30} className={cn('text-secondary')}/>
