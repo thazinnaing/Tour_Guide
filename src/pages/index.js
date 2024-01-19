@@ -10,7 +10,7 @@ import PopularPlaces from "./PopularPlaces";
 import Blog from "./Blog";
 import AboutUs from "./AboutUs";
 import Home from "./Home";
-import Detail from "./Detail";
+import Details from "./Details";
 
 export {
   HeroPage,
@@ -25,5 +25,5 @@ export {
   Home,
   Blog,
   AboutUs,
-  Detail
+  Details
 };

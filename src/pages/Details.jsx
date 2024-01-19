@@ -3,7 +3,7 @@ import { Div, H1, Img, P } from "../components/base";
 import { cn } from "../utils";
 import { places } from "../api";
 
-const Detail = () => {
+const Details = () => {
 
   const {id} = useParams('id');
   const detail = places.find(p => id === p.id.toString())
@@ -22,4 +22,4 @@ const Detail = () => {
   )
 }
 
-export default Detail
+export default Details
