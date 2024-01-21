@@ -1,11 +1,11 @@
-import { Div, H1, H2, Img } from "../components/base"
+import { Div, H1, Img } from "../components/base"
 import { cn } from "../utils"
 import ExplorePlaces from "./ExplorePlaces"
 import PopularPlaces from "./PopularPlaces"
 
 const Blog = () => {
   return (
-    <Div className={cn('w-full h-full flex flex-col mt-12 gap-8')}>
+    <Div className={cn('w-full h-full flex flex-col mt-16 gap-8')}>
       <Div className={cn('w-full flex flex-col-reverse sm:flex sm:flex-row gap-5')}>
         <Div className={cn('w-full sm:w-1/2 h-80')}>
           <Img className={cn('w-full h-full object-fill rounded-lg shadow-custom')} alt="blog" src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2clMjB0ZXh0JTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"/>
